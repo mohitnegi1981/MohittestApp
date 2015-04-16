@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Table</title>
+
+<style>
+.tableContainer{
+	border:1px solid #4375b1;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#fbfbf9;		
+	overflow:hidden	;
+	background:#618bbe url(images/table_bg.gif) repeat-x left top;
+	di splay:none;
+}
+#tooltip{
+	border:4px solid #ecd799;
+	background:#f9fae3;
+	padding:4px;
+	display:none;
+	position:absolute;
+	top:50px;
+	hei ght:20px;
+	left:100px;
+	z-index:9999999999999;
+	width:auto;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin-right:20px;
+}
+
+.hw-param{
+	width:1000px;
+	height:250px;
+}
+
+.hw-param1{
+	width:500px;
+	height:150px;
+}
+
+.tableContainer .tableBody{
+	position:absolute;
+	overflow:auto;
+	border-top:1px solid #4375b1;			
+}
+.tableContainer .tableHead{
+	position:absolute;
+	overflow:hidden;
+	border-right:1px solid #6890c1;
+}
+.tableContainer th{
+
+	border-right:1px solid #4375b1;	
+	border-left:1px solid #6890c1;
+	bord er-top:1px solid #6890c1;
+	color:#fff;
+	font-size:11px;
+	line-height:25px;
+	text-align:left;
+	padding-left:5px;
+	padding-right:5px;
+	font- weight:normal;
+	cursor:default;
+}
+.tableContainer td{
+	border-right:1px solid #4375b1;	
+	border-left:1px solid #FFFFFF;
+	line-height:20px;	
+	font-size:11px;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#FFFFFF;
+	cursor:default;
+	whit e-space:nowrap;
+}
+.tableContainer td span{
+	overflow:hidden;
+	float:left;
+	display:block;
+	white-space:nowrap;
+	width:inherit;
+}
+.tableContainer td.last-cell{
+	border-right:none;
+	padding-right:6px;
+}
+.tableContainer th.last-cell{
+	border-right:1px solid #4375b1;
+}
+.tableContainer td input{
+	/*width:100%;
+	#width:90%;*/
+}
+.tableContainer tr.altRow td{
+	background-color:#f0f6fd;
+}
+.tableContainer tr.rowHover td{
+	background-color:#f9f2c4;
+}
+
+.textbox{
+	width:100%;
+	#width:90%;
+	border:none;
+	outline:none;
+	font-size:11px;
+	background:transparent;
+}
+.textbox:focus{
+	background:#fff;
+}
+</style>
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/grid_toolkit.js"></script>
+</head>
+<body>
+
+<div id="fhTable02" class="tableContainer hw-param">
+<table border="0" cellspacing="0" cellpadding="0" summary="Dummy Summary for table">
+<thead>
+  <tr>
+    <th width="2%"><input type="checkbox" /></th>
+    <th width="5%">Col 1</th>
+    <th width="5%">Col 2</th>
+    <th width="30%">Col 3</th>
+    <th width="10%">Col 10</th>
+    <th width="10%">Col 11</th>
+    <th width="10%">Col 12</th>
+    <th width="8%" class="last-cell">Last Node </th>
+  </tr>
+</thead>
+  <tr>
+    <td align="left"><input name="checkbox" type="checkbox" /></td>
+    <td><input type="text" class="textbox" /></td>
+    <td>1</td>
+    <td>1asdadgas jdgjkdaas dgjkasdjka sgdjkashgdjhgsdfs ahg dagh ashgd ahd agd hga aghkkja ghjaghjghjagdja gh hja 1asdadgas jdgjkdaas dgjkasdjka sgdjkashgdjhgsdfs ahg dagh ashgd ahd agd hga aghkkja ghjaghjghjagdja gh hja 1asdadgas jdgjkdaas dgjkasdjka sgdjkashgdjhgsdfs ahg dagh ashgd ahd agd hga aghkkja ghjaghjghjagdja gh hja </td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td class="last-cell">1</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox2" type="checkbox" /></td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td class="last-cell">2</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox3" type="checkbox" /></td>
+    <td>3</td>
+    <td>3</td>
+    <td>3</td>
+    <td>3</td>
+    <td>3</td>
+    <td>3</td>
+    <td class="last-cell">3</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox4" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox5" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox6" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox7" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox8" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox9" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox10" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="checkbox11" type="checkbox" /></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="last-cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>L</td>
+    <td>L</td>
+    <td>L</td>
+    <td>L</td>
+    <td>L</td>
+    <td>L</td>
+    <td>L</td>
+    <td class="last-cell">L</td>
+  </tr>
+</table>
+</div>
+<br />
+<br />
+
+
+<div id="tooltip">Loading....</div>
+</body>
+</html>

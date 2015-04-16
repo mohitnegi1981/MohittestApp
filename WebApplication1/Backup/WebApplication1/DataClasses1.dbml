@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="iprism_Phase2_QA_28Aug" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.14.171;Initial Catalog=iprism_Phase2_QA_28Aug;User ID=dba" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="iprism_Phase2_QA_28AugConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.user_master" Member="user_masters">
+    <Type Name="user_master">
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="first_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="business_unit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="location" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="employee" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="in_house" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="platform" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="browser" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="access_level" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="language" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="user_password" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modified_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="created_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modified_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="new_password" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="country_bu_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="company_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="country_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="bu_id" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="language_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="accesslevel_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="in_house_contact" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="comments" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Training_Code" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.USP_AdvanceProjectSearch" Method="USP_AdvanceProjectSearch">
+    <Parameter Name="user_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="lid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="project_name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="project_team_member" Type="System.Int32" DbType="Int" />
+    <Parameter Name="country" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="business_unit" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="legal_entitity" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="title" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="author" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="identifier" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="project_status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="project_start_dt_from" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="project_start_dt_to" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="project_end_dt_from" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="project_end_dt_to" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.USP_GetUserDetailsOnId" Method="USP_GetUserDetailsOnId">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LID" Parameter="lID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="USP_GetUserDetailsOnIdResult">
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="User_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="first_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="business_unit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="location" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="employee" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="in_house" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="access_level" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="company_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="status_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="country_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="bu_id" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="language_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="accesslevel_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="in_house_contact" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="comments" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="created_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modifieddate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="modified_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modified_Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="created_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

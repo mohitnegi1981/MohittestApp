@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CD88B16-3321-4913-80CE-56CD8761131F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10618.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\mohit\BFCAutomation\UserInterface\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPSnippets.FaceBookAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ASPSnippets.FaceBookAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Bfw.Agilix.Commands">
+      <HintPath>..\..\..\Site Builder\2013\Trunk\Migration\ImportToc\bin\Debug\Bfw.Agilix.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Bfw.Agilix.DataContracts">
+      <HintPath>..\..\..\Site Builder\2013\Trunk\Migration\ImportToc\bin\Debug\Bfw.Agilix.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Bfw.Agilix.Dlap">
+      <HintPath>..\..\..\Site Builder\2013\Trunk\Migration\ImportToc\bin\Debug\Bfw.Agilix.Dlap.dll</HintPath>
+    </Reference>
+    <Reference Include="Bfw.Agilix.Dlap.Components">
+      <HintPath>..\..\..\Site Builder\2013\Trunk\Migration\ImportToc\bin\Debug\Bfw.Agilix.Dlap.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL" />
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\WebApplication1.dll" />
+    <Content Include="bin\WebApplication1.pdb" />
+    <Content Include="Child.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="default1.aspx" />
+    <Content Include="directoryTree.aspx" />
+    <Content Include="dynamicControls.aspx" />
+    <Content Include="fb.aspx" />
+    <Content Include="FixHeader.aspx" />
+    <Content Include="FTPfileCopy.aspx" />
+    <Content Include="GetResourceList.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="jquery.treeview1\changelog.txt" />
+    <Content Include="jquery.treeview1\demo\async.html" />
+    <Content Include="jquery.treeview1\demo\bg.gif" />
+    <Content Include="jquery.treeview1\demo\simpleHTML1.aspx" />
+    <Content Include="jquery.treeview1\demo\demo.js" />
+    <Content Include="jquery.treeview1\demo\edit.html" />
+    <Content Include="jquery.treeview1\demo\images.html" />
+    <Content Include="jquery.treeview1\demo\index.html" />
+    <Content Include="jquery.treeview1\demo\large.html" />
+    <Content Include="jquery.treeview1\demo\prerendered.html" />
+    <Content Include="jquery.treeview1\demo\screen.css" />
+    <Content Include="jquery.treeview1\demo\simple.html" />
+    <Content Include="jquery.treeview1\demo\simpleHTML.aspx" />
+    <Content Include="jquery.treeview1\demo\simpleHTML.htm" />
+    <Content Include="jquery.treeview1\demo\sortable.html" />
+    <Content Include="jquery.treeview1\demo\TransformXSLT.xsl" />
+    <Content Include="jquery.treeview1\images\ajax-loader.gif" />
+    <Content Include="jquery.treeview1\images\file.gif" />
+    <Content Include="jquery.treeview1\images\folder-closed.gif" />
+    <Content Include="jquery.treeview1\images\folder.gif" />
+    <Content Include="jquery.treeview1\images\minus.gif" />
+    <Content Include="jquery.treeview1\images\plus.gif" />
+    <Content Include="jquery.treeview1\images\treeview-black-line.gif" />
+    <Content Include="jquery.treeview1\images\treeview-black.gif" />
+    <Content Include="jquery.treeview1\images\treeview-default-line.gif" />
+    <Content Include="jquery.treeview1\images\treeview-default.gif" />
+    <Content Include="jquery.treeview1\images\treeview-famfamfam-line.gif" />
+    <Content Include="jquery.treeview1\images\treeview-famfamfam.gif" />
+    <Content Include="jquery.treeview1\images\treeview-gray-line.gif" />
+    <Content Include="jquery.treeview1\images\treeview-gray.gif" />
+    <Content Include="jquery.treeview1\images\treeview-red-line.gif" />
+    <Content Include="jquery.treeview1\images\treeview-red.gif" />
+    <Content Include="jquery.treeview1\jquery.treeview.async.js" />
+    <Content Include="jquery.treeview1\jquery.treeview.css" />
+    <Content Include="jquery.treeview1\jquery.treeview.edit.js" />
+    <Content Include="jquery.treeview1\jquery.treeview.js" />
+    <Content Include="jquery.treeview1\jquery.treeview.sortable.js" />
+    <Content Include="jquery.treeview1\lib\jquery.cookie.js" />
+    <Content Include="jquery.treeview1\lib\jquery.js" />
+    <Content Include="jquery.treeview\changelog.txt" />
+    <Content Include="jquery.treeview\demo\async.html" />
+    <Content Include="jquery.treeview\demo\bg.gif" />
+    <Content Include="jquery.treeview\demo\demo.js" />
+    <Content Include="jquery.treeview\demo\edit.html" />
+    <Content Include="jquery.treeview\demo\images.html" />
+    <Content Include="jquery.treeview\demo\index.html" />
+    <Content Include="jquery.treeview\demo\large.html" />
+    <Content Include="jquery.treeview\demo\prerendered.html" />
+    <Content Include="jquery.treeview\demo\screen.css" />
+    <Content Include="jquery.treeview\demo\simple.html" />
+    <Content Include="jquery.treeview\demo\simpleHTML.htm" />
+    <Content Include="jquery.treeview\demo\sortable.html" />
+    <Content Include="jquery.treeview\demo\TransformXSLT.xsl" />
+    <Content Include="jquery.treeview\demo\tree.aspx" />
+    <Content Include="jquery.treeview\images\ajax-loader.gif" />
+    <Content Include="jquery.treeview\images\file.gif" />
+    <Content Include="jquery.treeview\images\folder-closed.gif" />
+    <Content Include="jquery.treeview\images\folder.gif" />
+    <Content Include="jquery.treeview\images\minus.gif" />
+    <Content Include="jquery.treeview\images\plus.gif" />
+    <Content Include="jquery.treeview\images\treeview-black-line.gif" />
+    <Content Include="jquery.treeview\images\treeview-black.gif" />
+    <Content Include="jquery.treeview\images\treeview-default-line.gif" />
+    <Content Include="jquery.treeview\images\treeview-default.gif" />
+    <Content Include="jquery.treeview\images\treeview-famfamfam-line.gif" />
+    <Content Include="jquery.treeview\images\treeview-famfamfam.gif" />
+    <Content Include="jquery.treeview\images\treeview-gray-line.gif" />
+    <Content Include="jquery.treeview\images\treeview-gray.gif" />
+    <Content Include="jquery.treeview\images\treeview-red-line.gif" />
+    <Content Include="jquery.treeview\images\treeview-red.gif" />
+    <Content Include="jquery.treeview\jquery.treeview.async.js" />
+    <Content Include="jquery.treeview\jquery.treeview.css" />
+    <Content Include="jquery.treeview\jquery.treeview.edit.js" />
+    <Content Include="jquery.treeview\jquery.treeview.js" />
+    <Content Include="jquery.treeview\jquery.treeview.sortable.js" />
+    <Content Include="jquery.treeview\lib\jquery.cookie.js" />
+    <Content Include="jquery.treeview\lib\jquery.js" />
+    <Content Include="JSTree.aspx" />
+    <Content Include="JSTreeForFileUpload.aspx" />
+    <Content Include="jstree\themes\jquery-1.8.0.min.js" />
+    <Content Include="jstree\themes\jquery.jstree.js" />
+    <Content Include="jstree\README.txt" />
+    <Content Include="jstree\themes\apple\bg.jpg" />
+    <Content Include="jstree\themes\apple\d.png" />
+    <Content Include="jstree\themes\apple\dot_for_ie.gif" />
+    <Content Include="jstree\themes\apple\style.css" />
+    <Content Include="jstree\themes\apple\throbber.gif" />
+    <Content Include="jstree\themes\classic\d.gif" />
+    <Content Include="jstree\themes\classic\d.png" />
+    <Content Include="jstree\themes\classic\dot_for_ie.gif" />
+    <Content Include="jstree\themes\classic\style.css" />
+    <Content Include="jstree\themes\classic\throbber.gif" />
+    <Content Include="jstree\themes\default-rtl\d.gif" />
+    <Content Include="jstree\themes\default-rtl\d.png" />
+    <Content Include="jstree\themes\default-rtl\dots.gif" />
+    <Content Include="jstree\themes\default-rtl\style.css" />
+    <Content Include="jstree\themes\default-rtl\throbber.gif" />
+    <Content Include="jstree\themes\default\d.gif" />
+    <Content Include="jstree\themes\default\d.png" />
+    <Content Include="jstree\themes\default\style.css" />
+    <Content Include="jstree\themes\default\throbber.gif" />
+    <Content Include="jstree\_demo\file.png" />
+    <Content Include="jstree\_demo\folder.png" />
+    <Content Include="jstree\_demo\index.html" />
+    <Content Include="jstree\_demo\root.png" />
+    <Content Include="jstree\_demo\_dump.sql" />
+    <Content Include="jstree\_demo\_install.txt" />
+    <Content Include="jstree\_docs\!style.css" />
+    <Content Include="jstree\_docs\checkbox.html" />
+    <Content Include="jstree\_docs\contextmenu.html" />
+    <Content Include="jstree\_docs\cookies.html" />
+    <Content Include="jstree\_docs\core.html" />
+    <Content Include="jstree\_docs\crrm.html" />
+    <Content Include="jstree\_docs\dnd.html" />
+    <Content Include="jstree\_docs\hotkeys.html" />
+    <Content Include="jstree\_docs\html_data.html" />
+    <Content Include="jstree\_docs\index.html" />
+    <Content Include="jstree\_docs\json_data.html" />
+    <Content Include="jstree\_docs\languages.html" />
+    <Content Include="jstree\_docs\logo.png" />
+    <Content Include="jstree\_docs\search.html" />
+    <Content Include="jstree\_docs\sort.html" />
+    <Content Include="jstree\_docs\syntax\!script.js" />
+    <Content Include="jstree\_docs\syntax\!style.css" />
+    <Content Include="jstree\_docs\syntax\clipboard.swf" />
+    <Content Include="jstree\_docs\syntax\help.png" />
+    <Content Include="jstree\_docs\syntax\magnifier.png" />
+    <Content Include="jstree\_docs\syntax\page_white_code.png" />
+    <Content Include="jstree\_docs\syntax\page_white_copy.png" />
+    <Content Include="jstree\_docs\syntax\printer.png" />
+    <Content Include="jstree\_docs\syntax\wrapping.png" />
+    <Content Include="jstree\_docs\themeroller.html" />
+    <Content Include="jstree\_docs\themes.html" />
+    <Content Include="jstree\_docs\types.html" />
+    <Content Include="jstree\_docs\ui.html" />
+    <Content Include="jstree\_docs\unique.html" />
+    <Content Include="jstree\_docs\xml_data.html" />
+    <Content Include="jstree\_docs\_drive.png" />
+    <Content Include="jstree\_docs\_html_data.html" />
+    <Content Include="jstree\_docs\_xml_flat.xml" />
+    <Content Include="jstree\_docs\_xml_nest.xml" />
+    <Content Include="jstree\_lib\jquery.cookie.js" />
+    <Content Include="jstree\_lib\jquery.hotkeys.js" />
+    <Content Include="jstree\_lib\jquery.js" />
+    <Content Include="jstree\_lib\jquery.jstree.js" />
+    <Content Include="js\jquery-1.4.1-vsdoc.js" />
+    <Content Include="js\jquery-1.4.1.js" />
+    <Content Include="js\jquery-1.4.1.min.js" />
+    <Content Include="js\jquery-1.6.4.min.js" />
+    <Content Include="js\Jquery-jstree.js" />
+    <Content Include="js\jquery.jstree.js" />
+    <Content Include="js\jquery-1.8.0.min.js" />
+    <Content Include="js\jquery.treeview\changelog.txt" />
+    <Content Include="js\jquery.treeview\demo\async.html" />
+    <Content Include="js\jquery.treeview\demo\bg.gif" />
+    <Content Include="js\jquery.treeview\demo\demo.js" />
+    <Content Include="js\jquery.treeview\demo\directoryTreeTest.aspx" />
+    <Content Include="js\jquery.treeview\demo\edit.html" />
+    <Content Include="js\jquery.treeview\demo\images.html" />
+    <Content Include="js\jquery.treeview\demo\index.html" />
+    <Content Include="js\jquery.treeview\demo\large.html" />
+    <Content Include="js\jquery.treeview\demo\prerendered.html" />
+    <Content Include="js\jquery.treeview\demo\screen.css" />
+    <Content Include="js\jquery.treeview\demo\simple.html" />
+    <Content Include="js\jquery.treeview\demo\simpleHTML.htm" />
+    <Content Include="js\jquery.treeview\demo\sortable.html" />
+    <Content Include="js\jquery.treeview\demo\TransformXSLT.xsl" />
+    <Content Include="js\jquery.treeview\images\ajax-loader.gif" />
+    <Content Include="js\jquery.treeview\images\file.gif" />
+    <Content Include="js\jquery.treeview\images\folder-closed.gif" />
+    <Content Include="js\jquery.treeview\images\folder.gif" />
+    <Content Include="js\jquery.treeview\images\minus.gif" />
+    <Content Include="js\jquery.treeview\images\plus.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-black-line.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-black.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-default-line.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-default.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-famfamfam-line.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-famfamfam.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-gray-line.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-gray.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-red-line.gif" />
+    <Content Include="js\jquery.treeview\images\treeview-red.gif" />
+    <Content Include="js\jquery.treeview\jquery.treeview.async.js" />
+    <Content Include="js\jquery.treeview\jquery.treeview.css" />
+    <Content Include="js\jquery.treeview\jquery.treeview.edit.js" />
+    <Content Include="js\jquery.treeview\jquery.treeview.js" />
+    <Content Include="js\jquery.treeview\jquery.treeview.sortable.js" />
+    <Content Include="js\jquery.treeview\lib\jquery.cookie.js" />
+    <Content Include="js\jquery.treeview\lib\jquery.js" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="NewJsTree.aspx" />
+    <Content Include="PageWithMasterPage.aspx" />
+    <Content Include="Parent.aspx" />
+    <Content Include="ParsingXMLUsingXSD.aspx" />
+    <Content Include="Service1.svc" />
+    <Content Include="test.aspx" />
+    <Content Include="TestJs.aspx" />
+    <Content Include="vakata-jstree\dist\jstree.js" />
+    <Content Include="vakata-jstree\dist\jstree.min.js" />
+    <Content Include="vakata-jstree\dist\libs\jquery.js" />
+    <Content Include="vakata-jstree\dist\libs\jquery.ui.touch.js" />
+    <Content Include="vakata-jstree\dist\libs\require.js" />
+    <Content Include="vakata-jstree\dist\themes\default\32px.png" />
+    <Content Include="vakata-jstree\dist\themes\default\40px.png" />
+    <Content Include="vakata-jstree\dist\themes\default\style.css" />
+    <Content Include="vakata-jstree\dist\themes\default\style.min.css" />
+    <Content Include="vakata-jstree\dist\themes\default\throbber.gif" />
+    <Content Include="vakata-jstree\docs\assets\ajax_nodes.html" />
+    <Content Include="vakata-jstree\docs\assets\apple-touch-icon-precomposed.png" />
+    <Content Include="vakata-jstree\docs\assets\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="vakata-jstree\docs\assets\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="vakata-jstree\docs\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="vakata-jstree\docs\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vakata-jstree\docs\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="vakata-jstree\docs\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vakata-jstree\docs\assets\dist\jstree.js" />
+    <Content Include="vakata-jstree\docs\assets\dist\jstree.min.js" />
+    <Content Include="vakata-jstree\docs\assets\dist\libs\jquery.js" />
+    <Content Include="vakata-jstree\docs\assets\dist\libs\jquery.ui.touch.js" />
+    <Content Include="vakata-jstree\docs\assets\dist\libs\require.js" />
+    <Content Include="vakata-jstree\docs\assets\dist\themes\default\32px.png" />
+    <Content Include="vakata-jstree\docs\assets\dist\themes\default\40px.png" />
+    <Content Include="vakata-jstree\docs\assets\dist\themes\default\style.css" />
+    <Content Include="vakata-jstree\docs\assets\dist\themes\default\style.min.css" />
+    <Content Include="vakata-jstree\docs\assets\dist\themes\default\throbber.gif" />
+    <Content Include="vakata-jstree\docs\assets\docs.css" />
+    <Content Include="vakata-jstree\docs\assets\docs.js" />
+    <Content Include="vakata-jstree\docs\assets\favicon.ico" />
+    <Content Include="vakata-jstree\docs\assets\html5.js" />
+    <Content Include="vakata-jstree\docs\assets\images\browsers.png" />
+    <Content Include="vakata-jstree\docs\assets\images\find.png" />
+    <Content Include="vakata-jstree\docs\assets\images\logo.png" />
+    <Content Include="vakata-jstree\docs\assets\images\tree.png" />
+    <Content Include="vakata-jstree\docs\assets\images\tree_icon.png" />
+    <Content Include="vakata-jstree\docs\assets\jquery-1.10.2.min.js" />
+    <Content Include="vakata-jstree\docs\assets\jquery.address-1.6.js" />
+    <Content Include="vakata-jstree\docs\assets\respond.js" />
+    <Content Include="vakata-jstree\docs\assets\vakata.js" />
+    <Content Include="vakata-jstree\docs\index.html" />
+    <Content Include="vakata-jstree\gruntfile.js" />
+    <Content Include="vakata-jstree\libs\jquery.js" />
+    <Content Include="vakata-jstree\libs\jquery.ui.touch.js" />
+    <Content Include="vakata-jstree\libs\require.js" />
+    <Content Include="vakata-jstree\src\intro.js" />
+    <Content Include="vakata-jstree\src\jstree.checkbox.js" />
+    <Content Include="vakata-jstree\src\jstree.contextmenu.js" />
+    <Content Include="vakata-jstree\src\jstree.dnd.js" />
+    <Content Include="vakata-jstree\src\jstree.js" />
+    <Content Include="vakata-jstree\src\jstree.search.js" />
+    <Content Include="vakata-jstree\src\jstree.sort.js" />
+    <Content Include="vakata-jstree\src\jstree.state.js" />
+    <Content Include="vakata-jstree\src\jstree.types.js" />
+    <Content Include="vakata-jstree\src\jstree.unique.js" />
+    <Content Include="vakata-jstree\src\jstree.wholerow.js" />
+    <Content Include="vakata-jstree\src\outro.js" />
+    <Content Include="vakata-jstree\src\sample.js" />
+    <Content Include="vakata-jstree\src\themes\default\32px.png" />
+    <Content Include="vakata-jstree\src\themes\default\40px.png" />
+    <Content Include="vakata-jstree\src\themes\default\style.css" />
+    <Content Include="vakata-jstree\src\themes\default\throbber.gif" />
+    <Content Include="vakata-jstree\test\index.html" />
+    <Content Include="vakata-jstree\test\libs\qunit.css" />
+    <Content Include="vakata-jstree\test\libs\qunit.js" />
+    <Content Include="vakata-jstree\test\test.js" />
+    <Content Include="WebForm5.aspx" />
+    <Content Include="WebForm6.aspx" />
+    <Content Include="WebForm7.aspx" />
+    <None Include="jquery.treeview1\.gitignore" />
+    <None Include="jquery.treeview1\.project" />
+    <None Include="jquery.treeview1\demo\.tmp_async.html.79063~" />
+    <None Include="jquery.treeview1\demo\index.html.bak" />
+    <None Include="jquery.treeview1\demo\source.php" />
+    <None Include="jquery.treeview1\demo\source.phps" />
+    <None Include="jquery.treeview1\README.md" />
+    <None Include="jquery.treeview1\todo" />
+    <None Include="jquery.treeview\.gitignore" />
+    <None Include="jquery.treeview\.project" />
+    <None Include="jquery.treeview\demo\.tmp_async.html.79063~" />
+    <None Include="jquery.treeview\demo\index.html.bak" />
+    <None Include="jquery.treeview\demo\source.php" />
+    <None Include="jquery.treeview\demo\source.phps" />
+    <None Include="jquery.treeview\README.md" />
+    <None Include="jquery.treeview\todo" />
+    <None Include="jstree\_demo\config.php" />
+    <None Include="jstree\_demo\server.php" />
+    <None Include="jstree\_demo\_inc\class.tree.php" />
+    <None Include="jstree\_demo\_inc\class._database.php" />
+    <None Include="jstree\_demo\_inc\class._database_i.php" />
+    <None Include="jstree\_demo\_inc\__mysql_errors.log" />
+    <None Include="jstree\_docs\_json_data.json" />
+    <None Include="jstree\_docs\_search_data.json" />
+    <None Include="jstree\_docs\_search_result.json" />
+    <None Include="js\jquery.treeview\.gitignore" />
+    <None Include="js\jquery.treeview\.project" />
+    <None Include="js\jquery.treeview\demo\.tmp_async.html.79063~" />
+    <None Include="js\jquery.treeview\demo\index.html.bak" />
+    <None Include="js\jquery.treeview\demo\source.php" />
+    <None Include="js\jquery.treeview\demo\source.phps" />
+    <None Include="js\jquery.treeview\README.md" />
+    <None Include="js\jquery.treeview\todo" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Service References\ServiceReference1\SiteMigrationService.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="IntellisenceSearch.asmx" />
+    <Content Include="WebForm1.aspx" />
+    <None Include="Service References\ServiceReference1\SiteMigrationService.wsdl" />
+    <None Include="Service References\ServiceReference1\SiteMigrationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\SiteMigrationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\SiteMigrationService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Site1.Master" />
+    <None Include="vakata-jstree\.gitignore" />
+    <None Include="vakata-jstree\bower.json" />
+    <None Include="vakata-jstree\component.json" />
+    <None Include="vakata-jstree\docs\assets\ajax_children.json" />
+    <None Include="vakata-jstree\docs\assets\ajax_demo_children.json" />
+    <None Include="vakata-jstree\docs\assets\ajax_demo_roots.json" />
+    <None Include="vakata-jstree\docs\assets\ajax_roots.json" />
+    <None Include="vakata-jstree\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="vakata-jstree\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="vakata-jstree\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="vakata-jstree\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="vakata-jstree\docs\jstree.json" />
+    <None Include="vakata-jstree\jstree.jquery.json" />
+    <None Include="vakata-jstree\LICENSE-MIT" />
+    <None Include="vakata-jstree\package.json" />
+    <None Include="vakata-jstree\README.md" />
+    <None Include="vakata-jstree\src\themes\default\base.less" />
+    <None Include="vakata-jstree\src\themes\default\style.less" />
+    <None Include="vakata-jstree\test\UNDER_CONTRUCTION" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxScript.aspx.cs">
+      <DependentUpon>AjaxScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxScript.aspx.designer.cs">
+      <DependentUpon>AjaxScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_code\CspxHandler.cs" />
+    <Content Include="App_code\MyBModule.cs" />
+    <Compile Include="Child.aspx.cs">
+      <DependentUpon>Child.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Child.aspx.designer.cs">
+      <DependentUpon>Child.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="child1.cs" />
+    <Compile Include="Choice.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CS.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default1.aspx.cs">
+      <DependentUpon>default1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default1.aspx.designer.cs">
+      <DependentUpon>default1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="directoryTree.aspx.cs">
+      <DependentUpon>directoryTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="directoryTree.aspx.designer.cs">
+      <DependentUpon>directoryTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dynamicControls.aspx.cs">
+      <DependentUpon>dynamicControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dynamicControls.aspx.designer.cs">
+      <DependentUpon>dynamicControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fb.aspx.cs">
+      <DependentUpon>fb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fb.aspx.designer.cs">
+      <DependentUpon>fb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FixHeader.aspx.cs">
+      <DependentUpon>FixHeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FixHeader.aspx.designer.cs">
+      <DependentUpon>FixHeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FTPfileCopy.aspx.cs">
+      <DependentUpon>FTPfileCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FTPfileCopy.aspx.designer.cs">
+      <DependentUpon>FTPfileCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetResourceList.aspx.cs">
+      <DependentUpon>GetResourceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetResourceList.aspx.designer.cs">
+      <DependentUpon>GetResourceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="jquery.treeview1\demo\simpleHTML1.aspx.cs">
+      <DependentUpon>simpleHTML1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jquery.treeview1\demo\simpleHTML1.aspx.designer.cs">
+      <DependentUpon>simpleHTML1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jquery.treeview1\demo\simpleHTML.aspx.cs">
+      <DependentUpon>simpleHTML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jquery.treeview1\demo\simpleHTML.aspx.designer.cs">
+      <DependentUpon>simpleHTML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jquery.treeview\demo\tree.aspx.cs">
+      <DependentUpon>tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jquery.treeview\demo\tree.aspx.designer.cs">
+      <DependentUpon>tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSTree.aspx.cs">
+      <DependentUpon>JSTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSTree.aspx.designer.cs">
+      <DependentUpon>JSTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSTreeForFileUpload.aspx.cs">
+      <DependentUpon>JSTreeForFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSTreeForFileUpload.aspx.designer.cs">
+      <DependentUpon>JSTreeForFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JsTreeModel.cs" />
+    <Compile Include="JsTreeNode.cs" />
+    <Compile Include="js\jquery.treeview\demo\directoryTreeTest.aspx.cs">
+      <DependentUpon>directoryTreeTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="js\jquery.treeview\demo\directoryTreeTest.aspx.designer.cs">
+      <DependentUpon>directoryTreeTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="NewJsTree.aspx.cs">
+      <DependentUpon>NewJsTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewJsTree.aspx.designer.cs">
+      <DependentUpon>NewJsTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageWithMasterPage.aspx.cs">
+      <DependentUpon>PageWithMasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageWithMasterPage.aspx.designer.cs">
+      <DependentUpon>PageWithMasterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parent.cs" />
+    <Compile Include="ParsingXMLUsingXSD.aspx.cs">
+      <DependentUpon>ParsingXMLUsingXSD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParsingXMLUsingXSD.aspx.designer.cs">
+      <DependentUpon>ParsingXMLUsingXSD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question.cs" />
+    <Compile Include="DataClasses1.cs">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IService1.cs" />
+    <Compile Include="LinQ.aspx.cs">
+      <DependentUpon>LinQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinQ.aspx.designer.cs">
+      <DependentUpon>LinQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageLifeCycle.aspx.cs">
+      <DependentUpon>pageLifeCycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageLifeCycle.aspx.designer.cs">
+      <DependentUpon>pageLifeCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent.aspx.cs">
+      <DependentUpon>Parent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent.aspx.designer.cs">
+      <DependentUpon>Parent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IntellisenceSearch.asmx.cs">
+      <DependentUpon>IntellisenceSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service1.svc.cs">
+      <DependentUpon>Service1.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteItemFolderDAL.cs" />
+    <Compile Include="SiteItemsFolder.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestJs.aspx.cs">
+      <DependentUpon>TestJs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestJs.aspx.designer.cs">
+      <DependentUpon>TestJs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.fr-FR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.de-DE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxScript.aspx" />
+    <Content Include="App_LocalResources\Default.aspx.pt-PT.resx" />
+    <Content Include="Details.aspx" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\close_hover.gif" />
+    <Content Include="images\close_level1.gif" />
+    <Content Include="images\close_level1_first.gif" />
+    <Content Include="images\close_normal.gif" />
+    <Content Include="images\drop_down_light.gif" />
+    <Content Include="images\heading_bg.gif" />
+    <Content Include="images\left.gif" />
+    <Content Include="images\middle.gif" />
+    <Content Include="images\open_level1.gif" />
+    <Content Include="images\open_level1_first.gif" />
+    <Content Include="images\orange_bg.gif" />
+    <Content Include="images\right.gif" />
+    <Content Include="images\shadow.png" />
+    <Content Include="images\sub_node.gif" />
+    <Content Include="images\sub_node_last.gif" />
+    <Content Include="images\table_bg.gif" />
+    <Content Include="images\trans.gif" />
+    <Content Include="js\AjaxScript.js" />
+    <Content Include="js\grid_toolkit.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="LinQ.aspx" />
+    <Content Include="pageLifeCycle.aspx" />
+    <Content Include="table.html" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="WebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63215</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
